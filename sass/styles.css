@@ -1,0 +1,252 @@
+* {
+  font-family: "Roboton";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: #777;
+}
+body a {
+  color: #777;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+@media (max-width: 975px) {
+  .header {
+    padding: 0 1.2rem;
+    padding-bottom: 2rem;
+  }
+}
+.header-brand {
+  color: #eee;
+  font-size: 3rem;
+}
+@media (max-width: 975px) {
+  .header-navbar {
+    display: none;
+  }
+}
+.header-navbar ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-navbar ul li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.header-navbar ul li .active {
+  color: #6ca5c2;
+}
+.header-navbar ul li a:hover {
+  color: #6ca5c2;
+}
+@media (max-width: 975px) {
+  .header-social-media {
+    display: none;
+  }
+}
+.header-social-media ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-social-media ul li {
+  margin: 0 1rem;
+}
+.header-social-media ul a:hover {
+  color: #6ca5c2;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+@media (max-width: 975px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+.gallery-card {
+  color: #eee;
+  width: 32%;
+  height: 400px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 975px) {
+  .gallery-card {
+    width: 90%;
+    height: 100vh;
+  }
+}
+.gallery-card-title {
+  color: #eee;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.gallery-card-btn {
+  color: #eee;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border: 1px solid #eee;
+}
+.gallery-card-btn:hover {
+  background-color: #eee;
+  color: #1c1c1c;
+}
+.gallery #card-1 {
+  background-image: url("../imgs/animais.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-1:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../imgs/animais.jpg");
+}
+.gallery #card-2 {
+  background-image: url("../imgs/arquitetura.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-2:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../imgs/arquitetura.jpg");
+}
+.gallery #card-3 {
+  background-image: url("../imgs/cidade.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-3:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../imgs/cidade.jpg");
+}
+.gallery #card-4 {
+  background-image: url("../imgs/decoracao.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-4:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../imgs/decoracao.jpg");
+}
+.gallery #card-5 {
+  background-image: url("../imgs/esportes.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-5:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../imgs/esportes.jpg");
+}
+.gallery #card-6 {
+  background-image: url("../imgs/natureza.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-6:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../imgs/natureza.jpg");
+}
+.gallery #card-7 {
+  background-image: url("../imgs/paisagem.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-7:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../imgs/paisagem.jpg");
+}
+.gallery #card-8 {
+  background-image: url("../imgs/pessoas.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-8:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../imgs/pessoas.jpg");
+}
+.gallery #card-9 {
+  background-image: url("../imgs/refeicoes.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-9:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../imgs/refeicoes.jpg");
+}
+
+footer {
+  margin: 1rem 1rem;
+  text-align: center;
+}
+footer span {
+  color: #6ca5c2;
+}/*# sourceMappingURL=styles.css.map */
